@@ -1,6 +1,8 @@
 package controllers
 
 import (
+	"fmt"
+
 	beego "github.com/beego/beego/v2/server/web"
 )
 
@@ -12,4 +14,5 @@ func (c *MainController) Get() {
 	c.Data["Website"] = "beego.vip"
 	c.Data["Email"] = "astaxie@gmail.com"
 	c.TplName = "index.tpl"
+	fmt.Println("I am happy")
 }
