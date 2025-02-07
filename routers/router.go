@@ -2,9 +2,11 @@ package routers
 
 import (
 	"my_test_api/controllers"
+
 	beego "github.com/beego/beego/v2/server/web"
 )
 
+// Hello World
 func init() {
-    beego.Router("/", &controllers.MainController{})
+	beego.Router("/", &controllers.MainController{})
 }
